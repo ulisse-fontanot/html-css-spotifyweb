@@ -223,13 +223,6 @@ main{
   text-decoration: none;
 }
 
-.recente, .perte, .album{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 .main-dischi-menu ul{
   display: flex;
   justify-content: center;
@@ -249,6 +242,13 @@ main{
   cursor: pointer;
 }
 
+.recente, .perte, .album{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .disk{
   width: calc(100% / 6);
   padding: 10px;
@@ -257,6 +257,35 @@ main{
 
 .disk img{
   width: 100%;
+}
+
+.disk div{
+  position: relative;
+}
+
+div .layover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0%;
+}
+
+.layover i{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  opacity: 0%;
+}
+
+.disk div:hover, .disk div:hover i{
+  opacity: 100%;
+  cursor: pointer;
 }
 
 .disk h3{
@@ -277,5 +306,22 @@ footer{
   bottom:0;
   left: 0;
   background-color: grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer div{
+  height: 100%;
+  width: 300px;
+  background-color: blue;
+}
+
+footer .scritte-song{
+  display: flex;
+  justify-content: center;
+}
+
+footer .footer-song img{
+  height: 100%;
 }
 /* FOOTER */
