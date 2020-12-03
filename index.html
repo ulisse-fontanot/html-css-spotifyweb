@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,21 +16,36 @@
     <main>
 
       <!-- MAIN MENU/PARTE SINISTRA -->
-      <section class="main-menu">
+      <section class="main-menu text-grey">
         <!-- LOGO -->
-        <img src="" alt="">
+        <img class="invista" src="img/logo.svg" alt="logo">
+        <img class="hidden" src="img/logo-small.svg" alt="logo-small">
         <!-- LOGO -->
 
         <!-- MENU ALTO -->
-        <div class="main-menu-header blu">
-          <h1>titolo</h1>
-          <h2>secondo titolo</h2>
-          <h2>terzo titolo</h2>
+        <div class="main-menu-header m-b-10">
+          <div class="m-b-10">
+            <img src="img/home.svg" alt="home">
+            <p>Home</p>
+          </div>
+          <div class="m-b-10">
+            <img src="img/search.svg" alt="search">
+            <p>Cerca</p>
+          </div>
+          <div class="m-b-10">
+            <img src="img/libreria.svg" alt="libreria">
+            <p>La tua libreria</p>
+          </div>
         </div>
         <!-- MENU ALTO -->
 
+        <div class="titoli-playlist">
+          <h4 class="m-b-10">PLAYLIST</h4>
+          <div class="m-b-10"><i class="fas fa-plus-square pd-r-10"></i><p> Crea Playlist</p></div>
+        </div>
+
         <!-- MENU PLAYLIST -->
-        <div class="main-menu-playlist red">
+        <div class="main-menu-playlist">
           <ul>
             <li><a href="#">link</a></li>
             <li><a href="#">link</a></li>
@@ -58,9 +76,16 @@
         <!-- MENU PLAYLIST -->
 
         <!-- UTENTE -->
-        <div class="main-menu-utente violet">
-          <h2>secondo titolo</h2>
-          <h2>terzo titolo</h2>
+        <div class="main-menu-utente">
+          <div class="m-b-10 m-t-10">
+            <img src="img/download.svg" alt="download">
+            <h4>Installa app</h4>
+          </div>
+          <hr class="m-b-10">
+          <div>
+            <img src="img/profile.svg" alt="profile">
+            <h3 class="text-white">Ajeje Brazorf</h3>
+          </div>
         </div>
         <!-- UTENTE -->
       </section>

@@ -4,10 +4,16 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* RIUTILIZZABILI */
 ul li a{
   text-decoration: none;
-  color: white;
-  font-size: 30px;
+  color: grey;
+  font-size: 20px;
+  padding: 10px 0;
 }
 
 .blu{
@@ -22,8 +28,46 @@ ul li a{
   background-color: green;
 }
 
+.text-white{
+  color: white;
+}
+
+.text-grey{
+  color: grey;
+}
+
 .violet{
   background-color: violet;
+}
+
+.h-20{
+  height: 20px;
+}
+
+.pd-r-10{
+  padding-right: 10px;
+}
+
+.m-t-10{
+  margin-top: 10px;
+}
+
+.m-b-10{
+  margin-bottom: 10px;
+}
+
+.m-b-20{
+  margin-bottom: 20px;
+}
+
+.m-b-30{
+  margin-bottom: 30px;
+}
+
+.hidden{
+  visibility: hidden;
+  height: 0;
+  padding: 0;
 }
 
 .container{
@@ -43,18 +87,121 @@ main{
 .main-menu{
   width: 250px;
   height: 100%;
-  background-color: pink;
+  font-size: 20px;
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 10px;
+}
+
+.main-menu .invista{
+  width: 200px;
+  padding: 10px;
+}
+
+.main-menu .main-menu-header img{
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.main-menu .main-menu-header div{
+  display: flex;
+  align-items: center;
+}
+
+.main-menu .main-menu-header p{
+  display: inline-block;
+}
+
+.main-menu .main-menu-header div:hover{
+  color: white;
+  border-left: 3px solid green;
+  cursor: pointer;
+  padding-left: 10px;
 }
 
 .main-menu-playlist{
   flex-grow: 2;
-  min-height: 200px;
+  min-height: 150px;
   overflow-y: auto;
 }
+
+.titoli-playlist div{
+  display: flex;
+  align-items: center;
+}
+
+.titoli-playlist div:hover{
+  color: white;
+  cursor: pointer;
+}
+
+.titoli-playlist div i{
+  font-size: 40px;
+}
+
+.titoli-playlist div p{
+  display: inline-block;
+}
+
+.main-menu-utente div{
+  display: flex;
+  align-items: center;
+}
+
+.main-menu-utente img{
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.main-menu-utente h4, .main-menu-utente h3{
+  display: inline-block;
+}
+
+.main-menu-utente h4:hover{
+  color: white;
+  cursor: pointer;
+}
+
+ .main-menu-utente h3:hover{
+   color: green;
+   cursor: pointer;
+ }
 /* MAIN MENU/PARTE SINISTRA */
+
+/* VERSIONE SMARTPHONE */
+@media screen and (max-width: 480px){
+  .main-menu .hidden{
+    visibility: visible;
+      width: 30px;
+      height: 30px;
+      margin-bottom: 10px;
+  }
+
+  .main-menu{
+    width: 50px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .main-dischi{
+    width: calc(100% - 250px);
+  }
+  
+  .main-dischi .upgrade{
+    width: calc(100% - 250px);
+  }
+
+  .main-menu .invista, .main-menu-header div p, .titoli-playlist, .main-menu-playlist, .main-menu-utente h4, .main-menu-utente h3{
+    display: none;
+    visibility: hidden;
+  }
+}
 
 /* MAIN DISCHI/PARTE DESTRA */
 .main-dischi{
