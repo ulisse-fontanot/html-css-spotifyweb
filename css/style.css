@@ -16,28 +16,12 @@ ul li a{
   padding: 10px 0;
 }
 
-.blu{
-  background-color: blue;
-}
-
-.red{
-  background-color: red;
-}
-
-.green{
-  background-color: green;
-}
-
 .text-white{
   color: white;
 }
 
 .text-grey{
   color: grey;
-}
-
-.violet{
-  background-color: violet;
 }
 
 .h-20{
@@ -118,7 +102,7 @@ main{
 
 .main-menu .main-menu-header div:hover{
   color: white;
-  border-left: 3px solid green;
+  border-left: 5px solid green;
   cursor: pointer;
   padding-left: 10px;
 }
@@ -186,15 +170,15 @@ main{
   .main-menu{
     width: 50px;
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
   }
 
   .main-dischi{
-    width: calc(100% - 250px);
+    width: calc(100% - 50px);
   }
-  
+
   .main-dischi .upgrade{
-    width: calc(100% - 250px);
+    width: calc(100% - 50px);
   }
 
   .main-menu .invista, .main-menu-header div p, .titoli-playlist, .main-menu-playlist, .main-menu-utente h4, .main-menu-utente h3{
@@ -207,8 +191,9 @@ main{
 .main-dischi{
   width: calc(100% - 250px);
   height: 100%;
-  padding-top: 90px;
+  padding: 110px 10px 10px;
   overflow-y: scroll;
+  background-color: rgb(16, 25, 50);
 }
 
 .main-dischi .upgrade{
@@ -235,6 +220,48 @@ main{
   font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.recente, .perte, .album{
+  width: 100%;
+}
+
+.main-dischi-menu ul{
+  display: flex;
+  justify-content: center;
+}
+
+.main-dischi-menu ul li{
+  text-decoration: none;
+  color: grey;
+  display: inline-block;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.main-dischi-menu ul li:hover{
+  color: white;
+  border-bottom: 5px solid green;
+  cursor: pointer;
+}
+
+.disk{
+  width: calc(100% / 6);
+  padding: 10px;
+  border: 3px solid white;
+  text-align: center;
+}
+
+.disk img{
+  width: 100%;
+}
+
+.disk h3{
+  color: white;
+}
+
+.disk h5{
+  color: grey;
 }
 /* MAIN DISCHI/PARTE DESTRA */
 /* MAIN */
