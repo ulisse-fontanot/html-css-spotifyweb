@@ -124,6 +124,11 @@ main{
   cursor: pointer;
 }
 
+.main-menu-playlist ul li a:hover{
+  color: white;
+  cursor: pointer;
+}
+
 .titoli-playlist div i{
   font-size: 40px;
 }
@@ -153,11 +158,10 @@ main{
   cursor: pointer;
 }
 
- .main-menu-utente h3:hover{
-   color: green;
-   cursor: pointer;
- }
-/* MAIN MENU/PARTE SINISTRA */
+.main-menu-utente h3:hover{
+ color: green;
+ cursor: pointer;
+}
 
 /* VERSIONE SMARTPHONE */
 @media screen and (max-width: 480px){
@@ -172,14 +176,17 @@ main{
     width: 50px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
   }
 
-  .main-dischi{
-    width: calc(100% - 50px);
+  .main-menu-utente{
+    position: absolute;
+    bottom: 10px;
   }
 
-  .main-dischi .upgrade{
-    width: calc(100% - 50px);
+  .main-menu-header div:last-of-type p{
+    display: none;
   }
 
   .main-menu .invista, .main-menu-header div p, .titoli-playlist, .main-menu-playlist, .main-menu-utente h4, .main-menu-utente h3{
@@ -187,6 +194,7 @@ main{
     visibility: hidden;
   }
 }
+/* MAIN MENU/PARTE SINISTRA */
 
 /* MAIN DISCHI/PARTE DESTRA */
 .main-dischi{
@@ -223,6 +231,12 @@ main{
   text-decoration: none;
 }
 
+.upgrade .btn:hover{
+  padding: 8px 15px;
+  border: 3px solid white;
+  font-size: 25px;
+}
+
 .main-dischi-menu ul{
   display: flex;
   justify-content: center;
@@ -251,7 +265,7 @@ main{
 
 .disk{
   width: calc(100% / 6);
-  padding: 10px;
+  padding: 5px;
   text-align: center;
 }
 
@@ -288,7 +302,7 @@ div .layover{
   cursor: pointer;
 }
 
-.disk h3{
+.disk h4{
   color: white;
 }
 
@@ -297,10 +311,10 @@ div .layover{
 }
 
 /* VISIONE TABLET */
-@MEDIA screen and (max-width: 768px){
+@MEDIA screen and (max-width: 992px){
   .disk{
     width: calc(100% / 4);
-    padding: 10px;
+    padding: 5px;
     text-align: center;
   }
 }
@@ -309,8 +323,16 @@ div .layover{
 @MEDIA screen and (max-width: 480px){
   .disk{
     width: calc(100% / 2);
-    padding: 10px;
+    padding: 5px;
     text-align: center;
+  }
+
+  .main-dischi{
+    width: calc(100% - 50px);
+  }
+
+  .main-dischi .upgrade{
+    width: calc(100% - 50px);
   }
 }
 
@@ -353,6 +375,12 @@ footer .scritte-song{
   flex-direction: column;
   justify-content: center;
   margin-right: 10px;
+}
+
+footer .scritte-song h5:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
 }
 
 footer .c-c{
@@ -411,7 +439,7 @@ footer .footer-player .tempo .bar{
   position: relative;
 }
 
-footer .footer-player .tempo .bar div{
+footer .footer-player .tempo .bar .played{
   width: 40%;
   height: 100%;
   background-color: white;
@@ -420,7 +448,28 @@ footer .footer-player .tempo .bar div{
   padding: 0;
   position: absolute;
   left: -3px;
-  top: -3px;
+  top: -4px;
+}
+
+footer .footer-player .tempo .bar .played:hover{
+  background-color: green;
+  border: 5px solid green;
+  cursor: pointer;
+}
+
+footer .footer-player .tempo .bar .puntino{
+  position: absolute;
+  left: 37%;
+  top: -9px;
+  padding: 0;
+}
+
+footer .footer-player .tempo .bar:hover .puntino{
+  width: 3px;
+  height: 3px;
+  background-color: white;
+  border: 10px solid white;
+  border-radius:50%;
 }
 
 footer .footer-mirror{
