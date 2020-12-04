@@ -305,23 +305,135 @@ footer{
   position: fixed;
   bottom:0;
   left: 0;
-  background-color: grey;
+  background-color: rgb(47, 47, 47);
   display: flex;
   justify-content: space-between;
 }
 
+footer i:hover{
+  cursor: pointer;
+  text-shadow: 1px 1px 4px white;
+}
+
 footer div{
   height: 100%;
-  width: 300px;
-  background-color: blue;
+  width: 25%;
+  padding: 10px;
+}
+
+footer .footer-song{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 0;
 }
 
 footer .scritte-song{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+
+footer .c-c{
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+
+footer .img-song{
+  display: flex;
+  justify-content: flex-end;
 }
 
 footer .footer-song img{
   height: 100%;
+}
+
+footer .footer-player .pulsanti{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+footer .footer-player .pulsanti i{
+  padding: 0 15px;
+}
+
+footer .footer-player .pulsanti .fa-play-circle{
+  font-size: 30px;
+}
+
+footer .footer-player .tempo{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+footer .footer-player .tempo .bar{
+  width: 70%;
+  height: 1px;
+  border: 3px solid grey;
+  background-color: grey;
+  border-radius: 3px;
+  padding: 0;
+  margin: 0 10px;
+  position: relative;
+}
+
+footer .footer-player .tempo .bar div{
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  border: 3px solid white;
+  border-radius: 3px;
+  padding: 0;
+  position: absolute;
+  left: -3px;
+  top: -3px;
+}
+
+footer .footer-mirror{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+footer .footer-mirror i{
+  padding-right: 10px;
+}
+
+footer .footer-mirror .bar{
+  width: 50%;
+  height: 1px;
+  border: 3px solid grey;
+  background-color: grey;
+  border-radius: 3px;
+  padding: 0;
+  margin: 0 10px;
+  position: relative;
+}
+
+footer .footer-mirror .bar div{
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  border: 3px solid white;
+  border-radius: 3px;
+  padding: 0;
+  position: absolute;
+  left: -3px;
+  top: -3px;
 }
 /* FOOTER */
