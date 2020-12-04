@@ -295,6 +295,25 @@ div .layover{
 .disk h5{
   color: grey;
 }
+
+/* VISIONE TABLET */
+@MEDIA screen and (max-width: 768px){
+  .disk{
+    width: calc(100% / 4);
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+/* VISIONE SMARTPHONE */
+@MEDIA screen and (max-width: 480px){
+  .disk{
+    width: calc(100% / 2);
+    padding: 10px;
+    text-align: center;
+  }
+}
+
 /* MAIN DISCHI/PARTE DESTRA */
 /* MAIN */
 
@@ -333,17 +352,21 @@ footer .scritte-song{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 10px;
 }
 
 footer .c-c{
   display: flex;
   align-items: center;
+  order: 2;
+  justify-content: flex-start;
   font-size: 25px;
 }
 
 footer .img-song{
   display: flex;
   justify-content: flex-end;
+  margin: 0;
 }
 
 footer .footer-song img{
@@ -373,7 +396,6 @@ footer .footer-player .tempo{
   height: 40%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   font-size: 20px;
 }
@@ -410,8 +432,16 @@ footer .footer-mirror{
   font-size: 20px;
 }
 
-footer .footer-mirror i{
+footer .footer-mirror .i-mirror{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-mirror .i-mirror i{
   padding-right: 10px;
+  font-size: 15px;
 }
 
 footer .footer-mirror .bar{
@@ -435,5 +465,118 @@ footer .footer-mirror .bar div{
   position: absolute;
   left: -3px;
   top: -3px;
+}
+
+/* VISIONE TABLET FOOTER */
+@MEDIA screen and (max-width: 768px){
+  footer div{
+    height: 100%;
+    width: 22%;
+    padding: 10px;
+  }
+
+  footer .footer-song{
+    height: 100%;
+    width: 30%;
+    padding: 10px;
+  }
+
+  footer i{
+    font-size: 10px;
+    padding: 0 5px;
+  }
+
+  footer .footer-player .pulsanti i{
+    padding: 0 5px;
+  }
+
+  footer .footer-player .pulsanti .fa-play-circle{
+    font-size: 20px;
+  }
+
+  footer .footer-song i{
+    font-size: 20px;
+  }
+
+  footer .footer-song .c-c{
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    padding-left: 40%;
+  }
+
+  footer .footer-player .tempo{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;
+    padding: 0;
+  }
+
+  footer .footer-player .tempo .bar{
+    width: 90%;
+  }
+
+  footer .footer-mirror{
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .footer-mirror .i-mirror{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    height: 50%;
+  }
+
+  footer .footer-mirror .i-mirror i{
+    padding-right: 10px;
+    font-size: 15px;
+  }
+
+  footer .footer-mirror .bar{
+    width: 100%;
+  }
+}
+
+/* VISIONE SMARTPHONE FOOTER */
+@MEDIA screen and (max-width: 480px){
+  footer div{
+    height: 100%;
+    width: 30%;
+    padding: 10px;
+  }
+
+  footer .footer-song .scritte-song h3{
+    font-size: 0.7em;
+  }
+
+  footer .footer-song .scritte-song h5{
+    font-size: 0.7em;
+  }
+
+  footer .footer-song .c-c{
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+  }
+
+  footer .img-song{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    height: 80%;
+    padding: 0;
+  }
+
+  footer .footer-song img{
+    height: 100%;
+  }
 }
 /* FOOTER */
