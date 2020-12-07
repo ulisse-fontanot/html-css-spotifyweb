@@ -78,6 +78,7 @@ main{
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
+  overflow-y: auto;
 }
 
 .main-menu .invista{
@@ -246,6 +247,7 @@ main{
 .main-dischi-menu ul li{
   list-style-type: none;
   color: grey;
+  border-bottom: 5px solid rgb(16, 25, 50);
   padding: 10px;
   font-weight: bold;
 }
@@ -333,6 +335,16 @@ div .layover{
 
   .main-dischi .upgrade{
     width: calc(100% - 50px);
+  }
+}
+
+@media screen and (max-height: 350px){
+  div.upgrade, div.main-menu-utente{
+    display: none;
+  }
+
+  .main-dischi{
+    padding: 10px 10px 10px;
   }
 }
 
